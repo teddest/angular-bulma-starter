@@ -3,15 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarToggleDirective } from './core/directives/navbar-toggle/navbar-toggle.directive';
+
+import { CoreModule } from '@core/core.module';
+import { FeatureModule } from '@feature/feature.module';
+import { SharedModule } from '@shared/shared.module';
+// ^ https://netbasal.com/sexier-imports-in-typescript-e3c645bdd3c6 ^
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarToggleDirective
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    CoreModule,
+    FeatureModule,
+    SharedModule,
     AppRoutingModule
   ],
   providers: [],
