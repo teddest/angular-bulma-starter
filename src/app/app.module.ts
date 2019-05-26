@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarToggleDirective } from './core/directives/navbar-toggle/navbar-toggle.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarToggleDirective
   ],
   imports: [
     BrowserModule,
