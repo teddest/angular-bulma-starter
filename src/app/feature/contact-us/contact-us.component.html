@@ -1,3 +1,55 @@
-<div class="notification">
-  contact-us works!
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Contact Us
+      </h1>
+      <h2 class="subtitle">
+        Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+        posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<div class="section">
+  <form [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
+
+    <div class="field-body">
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" formControlName="name" placeholder="Name">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left">
+          <input class="input" type="email" formControlName="email" placeholder="Email">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <textarea class="textarea" formControlName="message" placeholder="Message" rows="10"></textarea>
+      </div>
+    </div>
+
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-primary" [disabled]="!contactUsForm.valid">Submit</button>
+      </div>
+      <div class="control">
+        <a class="button is-text" routerLink="home">Cancel</a>
+      </div>
+    </div>
+
+  </form>
 </div>
