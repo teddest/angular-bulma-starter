@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContactUsComponent } from './contact-us.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 describe('ContactUsComponent', () => {
   let component: ContactUsComponent;
@@ -8,9 +10,11 @@ describe('ContactUsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContactUsComponent ]
+      imports: [ReactiveFormsModule],
+      declarations: [ContactUsComponent],
+      schemas: [NO_ERRORS_SCHEMA],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
