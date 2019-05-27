@@ -1,6 +1,10 @@
-# AngularBulmaStarter
+# Angular Bulma Starter
 
+[![Build Status](https://travis-ci.org/teddest/angular-bulma-starter.svg?branch=master)](https://travis-ci.org/teddest/angular-bulma-starter)
 [![Greenkeeper badge](https://badges.greenkeeper.io/teddest/angular-bulma-starter.svg)](https://greenkeeper.io/)
+[![devDependency Status](https://david-dm.org/teddest/angular-bulma-starter.svg?branch=master)](https://david-dm.org/teddest/angular-bulma-starter#info=devDependencies)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/teddest/angular-bulma-starter/blob/master/LICENSE)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
