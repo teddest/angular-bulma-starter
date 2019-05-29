@@ -1,5 +1,5 @@
 import { NavbarToggleDirective } from './navbar-toggle.directive';
-import { DOCUMENT } from '@angular/platform-browser';
+import { DOCUMENT } from "@angular/common";
 
 describe('NavbarToggleDirective', () => {
   it('should create an instance', () => {
